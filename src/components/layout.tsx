@@ -24,9 +24,6 @@ const Layout = ({ pageTitle, children }: {pageTitle: string, children: React.Rea
           <li className={styles.navLinkItem}>
             <Link to="/about" className={styles.navLinkText}>About</Link>
           </li>
-          <li className={styles.navLinkItem}>
-            <Link to="/blog" className={styles.navLinkText}>Blog</Link>
-          </li>
         </ul>
       </nav>
       <main>
