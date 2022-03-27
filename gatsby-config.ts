@@ -2,10 +2,21 @@ import type { GatsbyConfig } from "gatsby"
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `new`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Maaji inc.`,
+    siteUrl: `https://maaji.co.jp`,
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `./blog`,
+      }
+    },
+    "gatsby-plugin-mdx",
+  ],
 }
 
 export default config
