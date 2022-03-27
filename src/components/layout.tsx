@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 import * as styles from './layout.module.css'
 
 const Layout = ({ pageTitle, children }: {pageTitle: string, children: React.ReactNode}) => {
@@ -14,7 +15,9 @@ const Layout = ({ pageTitle, children }: {pageTitle: string, children: React.Rea
   `)
   return (
     <div className={styles.container}>
-      <title>{pageTitle} | {data.site.siteMetadata.title}</title>
+      <Helmet>
+        <title>{pageTitle} | {data.site.siteMetadata.title}</title>
+      </Helmet>
       <header className={styles.siteTitle}>{data.site.siteMetadata.title}</header>
       <nav>
         <ul className={styles.navLinks}>
