@@ -20,4 +20,4 @@ jobs:
         node-version: '17.8.0'
         cache: 'npm'
     - run: npm ci
-    - run: ls
+    - run: npm run deploy
