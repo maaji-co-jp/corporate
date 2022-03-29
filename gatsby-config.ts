@@ -1,14 +1,15 @@
-import type { GatsbyConfig } from "gatsby"
+import type { GatsbyConfig } from 'gatsby'
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Maaji inc.`,
-    siteUrl: `https://maaji.co.jp`,
+    title: 'Maaji inc.',
+    siteUrl: 'https://maaji.co.jp',
+    icon: 'src/images/favicon.ico', 
   },
   plugins: [
-    "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
-    "gatsby-plugin-react-helmet",
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-react-helmet',
   ],
 }
 
