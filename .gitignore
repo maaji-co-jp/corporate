@@ -1,5 +1,4 @@
 node_modules/
 .cache/
-public
-docs/*
-!docs/CNAME
+public/*
+!public/CNAME
