@@ -5,12 +5,13 @@ import { AppBar, Toolbar } from '@mui/material';
 
 const Header = () => {
   return(
-    <AppBar elevation={24} color="transparent">
+    <AppBar elevation={24} color="inherit">
       <Toolbar sx={{ justifyContent: 'center' }}>
         <Link to="/">
           <StaticImage
             alt="maajiのロゴ"
             src="../images/logo.png"
+            loading="eager"
             width={200}
           />
         </Link>
