@@ -4,6 +4,7 @@ import Container from '@mui/material/Container';
 import Head from './head'
 import Header from './header'
 import Hero from './hero'
+import Footer from './footer'
 
 const Layout = ({ pageTitle, children }: {pageTitle: string, children: React.ReactNode}) => {
   return (
@@ -18,6 +19,7 @@ const Layout = ({ pageTitle, children }: {pageTitle: string, children: React.Rea
           {children}
         </main>
       </Container>
+      <Footer />
     </div>
   )
 }
