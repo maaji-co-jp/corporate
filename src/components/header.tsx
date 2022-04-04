@@ -11,7 +11,6 @@ const Header = () => {
           <StaticImage
             alt="maajiのロゴ"
             src="../images/logo.png"
-            loading="eager"
             width={200}
           />
         </Link>

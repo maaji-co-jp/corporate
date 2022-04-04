@@ -1,21 +1,20 @@
 import * as React from 'react'
 import CssBaseline from '@mui/material/CssBaseline';
-import Container from '@mui/material/Container';
+import { Container } from '@mui/material';
 import Head from './head'
 import Header from './header'
 import Hero from './hero'
 import Footer from './footer'
 
-const Layout = ({ pageTitle, children }: {pageTitle: string, children: React.ReactNode}) => {
+const Layout = ({ children }: {children: React.ReactNode}) => {
   return (
     <div>
       <CssBaseline />
       <Head />
       <Header />
       <Hero />
-      <Container>
+      <Container maxWidth="md">
         <main>
-          <h1>{pageTitle}</h1>
           {children}
         </main>
       </Container>
