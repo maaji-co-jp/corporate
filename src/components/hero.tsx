@@ -7,7 +7,7 @@ const Hero = () => {
     <Box className={styles.container}>
       <Container>
         <Typography className={styles.heroText} variant="h3" component="p">
-          テクノロジーで<br />世界を楽しく
+          テクノロジーで<br />世界を自由に
         </Typography>
       </Container>
     </Box>
