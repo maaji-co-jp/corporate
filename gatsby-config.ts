@@ -14,7 +14,13 @@ const config: GatsbyConfig = {
       options: {
         icon: 'src/images/favicon.png',
       },
-    }
+    },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-5XBHZX5"
+      },
+    },
   ],
 }
 
