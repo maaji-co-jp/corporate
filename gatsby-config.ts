@@ -2,7 +2,7 @@ import type { GatsbyConfig } from 'gatsby'
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: 'Maaji, inc.',
+    title: '株式会社Maaji',
     siteUrl: 'https://maaji.co.jp',
   },
   plugins: [
