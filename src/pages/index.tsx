@@ -48,7 +48,7 @@ const IndexPage = () => {
                 </TableRow>
                 <TableRow>
                   <TableCell>お問い合わせ</TableCell>
-                  <TableCell><a href="mailto:info@maaji.co.jp">info@maaji.co.jp</a></TableCell>
+                  <TableCell><a href="mailto:info@mail.maaji.co.jp">info@mail.maaji.co.jp</a></TableCell>
                 </TableRow>
               </TableBody>
             </Table>
