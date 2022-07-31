@@ -7,8 +7,12 @@ const IndexPage = () => {
   return (
     <Layout>
       <Box sx={{textAlign: 'center'}}>
-        <Box>
-          <h2>Service</h2>
+        <Box
+          sx={{
+            padding: '10px 0',
+          }}
+        >
+          <h2>Services</h2>
           <Grid container>
             <Grid item xs={12} sm={4}>
               <StaticImage
@@ -26,6 +30,31 @@ const IndexPage = () => {
                 定額制プログラミング教室
               </Box>
               <Button variant="outlined" href="https://techgym.jp/tokyo/akihabara/">テックジム秋葉原校</Button>
+            </Grid>
+          </Grid>
+        </Box>
+        <Box
+          sx={{
+            padding: '10px 0',
+          }}
+        >
+          <Grid container>
+            <Grid item xs={12} sm={4}>
+              <StaticImage
+                alt="BookLog"
+                src="../images/booklog.png"
+                width={300}
+              />
+            </Grid>
+            <Grid item xs={12} sm={8}>
+              <h3>BookLog</h3>
+              <Box component="p">
+                読書中のエモーションを即座にログに残せる
+              </Box>
+              <Box component="p">
+                読書のサポートサービス
+              </Box>
+              <Button variant="outlined" href="https://www.booklog.xyz">BookLog</Button>
             </Grid>
           </Grid>
         </Box>
