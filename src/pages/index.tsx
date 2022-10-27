@@ -7,32 +7,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Box sx={{textAlign: 'center'}}>
-        <Box
-          sx={{
-            padding: '10px 0',
-          }}
-        >
-          <h2>Services</h2>
-          <Grid container>
-            <Grid item xs={12} sm={4}>
-              <StaticImage
-                alt="テックジム秋葉原校"
-                src="../images/techgym_logo.png"
-                width={300}
-              />
-            </Grid>
-            <Grid item xs={12} sm={8}>
-              <h3>テックジム秋葉原校</h3>
-              <Box component="p">
-                「基礎知識不要」で気軽に通える
-              </Box>
-              <Box component="p">
-                定額制プログラミング教室
-              </Box>
-              <Button variant="outlined" href="https://techgym.jp/tokyo/akihabara/">テックジム秋葉原校</Button>
-            </Grid>
-          </Grid>
-        </Box>
+        <h2>Services</h2>
         <Box
           sx={{
             padding: '10px 0',
