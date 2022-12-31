@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Layout from '../components/layout'
-import { TableContainer, Table, TableBody, TableCell, TableRow, Box, Grid, Button } from '@mui/material';
+import { TableContainer, Table, TableBody, TableCell, TableRow, Box, Grid, Button, List, ListItem, ListItemText, ListItemIcon } from '@mui/material';
+import AssignmentTurnedInIcon from '@mui/icons-material/AssignmentTurnedIn';
 import { StaticImage } from 'gatsby-plugin-image'
 
 const IndexPage = () => {
@@ -8,30 +9,14 @@ const IndexPage = () => {
     <Layout>
       <Box sx={{textAlign: 'center'}}>
         <h2>Services</h2>
-        <Box
-          sx={{
-            padding: '10px 0',
-          }}
-        >
-          <Grid container>
-            <Grid item xs={12} sm={4}>
-              <StaticImage
-                alt="BookLog"
-                src="../images/booklog.png"
-                width={300}
-              />
-            </Grid>
-            <Grid item xs={12} sm={8}>
-              <h3>BookLog</h3>
-              <Box component="p">
-                読書中のエモーションを即座にログに残せる
-              </Box>
-              <Box component="p">
-                読書のサポートサービス
-              </Box>
-              <Button variant="outlined" href="https://www.booklog.xyz">BookLog</Button>
-            </Grid>
-          </Grid>
+        <Box>
+          <List>
+            <ListItem><AssignmentTurnedInIcon />Rails, Laravelを使ったWebサービスの受託開発</ListItem>
+            <ListItem><AssignmentTurnedInIcon />タスク管理・スクラムなどの開発組織作り</ListItem>
+            <ListItem><AssignmentTurnedInIcon />既存プロジェクト・新規事業などの開発支援</ListItem>
+            <ListItem><AssignmentTurnedInIcon />SEO・広告運用・LPOなどのWebマーケティング</ListItem>
+            <ListItem><AssignmentTurnedInIcon />その他Webに関わるものはなんでもご相談ください</ListItem>
+          </List>
         </Box>
         <Box>
           <h2>About</h2>
