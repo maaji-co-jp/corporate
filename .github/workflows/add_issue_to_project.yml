@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: add-new-issues-to-organization-based-project-column
-      uses: docker://takanabe/github-actions-automate-projects:v0.0.2
+      uses: takanabe/github-actions-automate-projects@v0.0.2
       env:
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_PROJECT_URL: https://github.com/orgs/maaji-co-jp/projects/2
