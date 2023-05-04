@@ -10,8 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: add-new-issues-to-organization-based-project-column
-      uses: PaperMC/update-projects-action@v0.2.0
+      uses: actions/add-to-project@v0.5.0
       with:
+        project-url: https://github.com/orgs/maaji-co-jp/projects/2
         github-token: ${{ secrets.ACCESS_TOKEN }}
-        project-url: https://github.com/orgs/maaji-co-jp/projects/2/views/1
-        column-field: Status
