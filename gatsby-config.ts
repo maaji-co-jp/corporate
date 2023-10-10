@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from 'gatsby'
 
 const config: GatsbyConfig = {
+  trailingSlash: `always`,
   siteMetadata: {
     title: '株式会社Maaji',
     siteUrl: 'https://maaji.co.jp',
