@@ -20,7 +20,7 @@
     "@emotion/styled": "^11.3.0",
     "@mdx-js/mdx": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
-    "@mui/icons-material": "^5.14.12",
+    "@mui/icons-material": "^5.15.2",
     "@mui/material": "^5.14.20",
     "gatsby": "^5.12.6",
     "gatsby-plugin-eslint": "^4.0.2",
