@@ -21,7 +21,7 @@
     "@mdx-js/mdx": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
     "@mui/icons-material": "^5.15.4",
-    "@mui/material": "^5.14.20",
+    "@mui/material": "^5.15.5",
     "gatsby": "^5.12.6",
     "gatsby-plugin-eslint": "^4.0.2",
     "gatsby-plugin-google-tagmanager": "^5.12.0",
