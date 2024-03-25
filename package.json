@@ -43,7 +43,7 @@
     "@typescript-eslint/parser": "^7.2.0",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.3"
   },
   "optionalDependencies": {
     "@parcel/watcher-linux-x64-glibc": "^2.4.1"
