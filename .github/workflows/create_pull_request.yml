@@ -16,7 +16,7 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
-          base: test_main
+          base: main
           commit-message: update authors
           title: Update AUTHORS
           body: Credit new contributors by updating AUTHORS
