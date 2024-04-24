@@ -10,7 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          ref: main
+
+      - name: Reset promotion branch
+        run: |
+          git fetch origin main:main
+          git reset --hard main
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
@@ -19,4 +24,3 @@ jobs:
           title: Update AUTHORS
           body: Credit new contributors by updating AUTHORS
           branch: production-promotion
-          base: main
