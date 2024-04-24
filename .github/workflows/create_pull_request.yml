@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: test_main
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
@@ -19,4 +19,4 @@ jobs:
           title: Update AUTHORS
           body: Credit new contributors by updating AUTHORS
           branch: production-promotion
-          base: test_main
+          base: main
