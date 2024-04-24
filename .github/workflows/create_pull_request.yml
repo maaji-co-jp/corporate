@@ -3,11 +3,19 @@ on:
   push:
     branches:
       - test_main
+
 jobs:
   CreatePullRequest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reset promotion branch
+        run: |
+          git fetch origin test_main
+          git reset --hard test_main
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
@@ -15,4 +23,4 @@ jobs:
           commit-message: update authors
           title: Update AUTHORS
           body: Credit new contributors by updating AUTHORS
-          branch: main
+          branch: production-promotion
