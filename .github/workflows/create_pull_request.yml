@@ -2,17 +2,24 @@ name: Release Action
 on:
   push:
     branches:
-      - test_release
+      - test_develop
 jobs:
   CreatePullRequest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: test_main
+
+      - name: Reset promotion branch
+        run: |
+          git fetch origin main:main
+          git reset --hard main
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
-          branch: test_main
+          branch: test_promotion
           commit-message: update authors
           title: Update AUTHORS
           body: Credit new contributors by updating AUTHORS
