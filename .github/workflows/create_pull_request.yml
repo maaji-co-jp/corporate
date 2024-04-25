@@ -8,13 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: sample
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
-          branch: production-promotion
+          branch: test_main
           commit-message: update authors
           title: Update AUTHORS
           body: Credit new contributors by updating AUTHORS
