@@ -22,7 +22,7 @@
     "@mdx-js/react": "3.0.1",
     "@mui/icons-material": "^5.15.18",
     "@mui/material": "^5.15.18",
-    "gatsby": "^5.13.5",
+    "gatsby": "^5.13.6",
     "gatsby-plugin-eslint": "^4.0.4",
     "gatsby-plugin-google-tagmanager": "^5.13.1",
     "gatsby-plugin-image": "^3.13.1",
