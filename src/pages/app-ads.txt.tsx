@@ -14,6 +14,7 @@ const AppAdsPage = () => {
     video.unrulymedia.com, 5444561541445527220, RESELLER, 29bc7d05d309e1bc
     rhythmone.com, 5444561541445527220, RESELLER, a670c89d4a324e47
     xandr.com, 8449, RESELLER
+    google.com, pub-1925733987918157, DIRECT, f08c47fec0942fa0
   `
   return text;
 };
