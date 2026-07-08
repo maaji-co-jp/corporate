@@ -1,15 +1,21 @@
 import * as React from "react";
 import Layout from "../../components/layout";
-import { Box, Container } from "@mui/material";
-import Hero from "../../components/hero";
+import { Box, Container, Typography } from "@mui/material";
 
 const PrivacyPolicyPage = () => {
   return (
     <Layout>
-      <Hero>
-        <h1>Privacy Policy</h1>
-      </Hero>
-      <Container maxWidth="md">
+      <Box
+        component="section"
+        sx={{ bgcolor: "#F5F8FC", pt: { xs: 14, md: 20 }, pb: { xs: 6, md: 8 } }}
+      >
+        <Container maxWidth="md">
+          <Typography variant="h1" sx={{ fontSize: { xs: "2rem", md: "2.6rem" } }}>
+            Privacy Policy
+          </Typography>
+        </Container>
+      </Box>
+      <Container maxWidth="md" sx={{ py: { xs: 5, md: 7 } }}>
         <Box>
           <p>
             Maaji inc. built the NGSL Flash Card app as an Ad Supported app.
