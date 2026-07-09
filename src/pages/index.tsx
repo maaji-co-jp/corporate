@@ -92,8 +92,8 @@ const services = [
   },
   {
     icon: <CampaignRoundedIcon fontSize="large" />,
-    title: "Webマーケティング",
-    body: "SEO・広告運用・LPO など、つくったプロダクトを届けて伸ばすための施策まで伴走します。",
+    title: "エンジニアリング × マーケティング",
+    body: "SEO・広告運用・LPO を、計測基盤の構築やデータ連携・自動化とセットで実装。開発会社ならではの視点で、マーケとプロダクトを一体で伸ばします。",
   },
 ];
 
@@ -106,12 +106,12 @@ const approach = [
   {
     no: "02",
     title: "小さく作って検証する",
-    body: "0→1 の立ち上げ経験を活かし、素早く形にして検証を回しながら確度を高めていきます。",
+    body: "アイデアはまず小さく形にして、検証を回しながら確度を高めていきます。",
   },
   {
     no: "03",
     title: "スケールに耐える設計",
-    body: "数名から100名超へ成長する現場で培った、伸びても壊れない設計と組織づくりを重視します。",
+    body: "伸びても壊れない設計と組織づくりを重視します。急拡大するチームでも破綻しないように。",
   },
   {
     no: "04",
@@ -124,7 +124,7 @@ const works = [
   {
     label: "LegalTech",
     title: "電子契約サービス「NINJA SIGN（現 freeeサイン）」",
-    body: "プロダクト責任者・リード開発として 0→1 を立ち上げ、事業売却（EXIT）まで牽引しました。",
+    body: "開発責任者として 0→1 を立ち上げ、事業売却（EXIT）まで牽引しました。",
   },
   {
     label: "EdTech",
@@ -217,7 +217,7 @@ const IndexPage = () => {
           <SectionHeading
             kicker="APPROACH"
             title="Maajiの進め方"
-            description="立ち上げから事業のスケールまでを経験したからこそ大切にしている、4つのスタンスです。"
+            description="0→1からスケールまで、私たちが大切にしている4つのスタンスです。"
           />
           <Grid container spacing={{ xs: 3, md: 5 }}>
             {approach.map((a) => (
